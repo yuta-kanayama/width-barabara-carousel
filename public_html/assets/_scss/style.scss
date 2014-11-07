@@ -1,0 +1,57 @@
+@import "compass",
+        "compass/reset",
+        "tools/font-size/ptp-14",
+        "base";
+
+
+.width-barabara-carousel {
+	overflow: hidden;
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	.list {
+		overflow: hidden;
+		position: relative;
+		width: 200000px;
+		margin: 0 0 0 -5px;
+		@include legacy-pie-clearfix;
+	}
+	.item {
+		float: left;
+		margin: 0 5px;
+		.inner {
+			position: relative;
+			height: 60px;
+			padding: 10px;
+			color: #fff;
+			background: #333;
+		}
+	}
+	.nav {
+		width: 100px;
+		margin: 20px auto 0;
+		@include legacy-pie-clearfix;
+	}
+	.nav__prev {
+		float: left;
+	}
+	.nav__next {
+		float: right;
+	}
+	
+	.center-guide {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin: 0 0 0 -50px;
+		width: 100px;
+		height: 80px;
+		background: #f00;
+		line-height: 0;
+		font-size: 0;
+		opacity: .5;
+	}
+}
+
+
+
